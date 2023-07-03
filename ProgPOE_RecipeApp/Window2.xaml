@@ -1,0 +1,34 @@
+﻿<Window x:Class="ProgPOE_RecipeApp.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProgPOE_RecipeApp"
+        mc:Ignorable="d"
+        Title="Window2" Height="800" Width="800">
+    <Grid Background="#FF10E9F9">
+        <Label x:Name="lblName" Content="Recipe App" Margin="250,29,250,695" FontSize="36" FontFamily="Lucida Console" HorizontalContentAlignment="Center"/>
+        <Label x:Name="lblRecipeName" Content="Enter Recipe Name" Margin="87,167,423,577" Width="290" Height="40" FontFamily="Lucida Console" FontSize="22" Background="#FFFFFEFE" RenderTransformOrigin="0.512,0.517"/>
+        <Label x:Name="lblIngredientName" Content="Enter Ingredient Name" Margin="87,242,423,502" Width="290" Height="40" FontFamily="Lucida Console" FontSize="22" Background="#FFFFFEFE"/>
+        <Label x:Name="lblQuantity" Content="Quantity" Margin="87,318,423,426" Width="290" Height="40" FontFamily="Lucida Console" FontSize="22" Background="#FFFFFEFE"/>
+        <Label x:Name="lblUnit" Content="Unit of Measurement" Margin="87,392,423,352" Width="290" Height="40" FontFamily="Lucida Console" FontSize="22" Background="#FFFFFEFE"/>
+        <Label x:Name="lblCalories" Content="Calories" Margin="87,470,423,274" Width="290" Height="40" FontFamily="Lucida Console" FontSize="22" Background="#FFFFFEFE"/>
+        <TextBox x:Name="txtRecipeName" HorizontalAlignment="Left" Margin="414,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="298" Height="40"/>
+        <TextBox x:Name="txtIngredientName" HorizontalAlignment="Left" Margin="414,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="298" Height="40"/>
+        <TextBox x:Name="txtQuantity" HorizontalAlignment="Left" Margin="414,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="298" Height="40"/>
+        <TextBox x:Name="txtUnit" HorizontalAlignment="Left" Margin="414,392,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="298" Height="40"/>
+        <TextBox x:Name="txtCalories" HorizontalAlignment="Left" Margin="414,472,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="298" Height="40"/>
+        <Label x:Name="label" Content="Create New Recipe" HorizontalAlignment="Center" Margin="0,94,0,0" VerticalAlignment="Top" Width="200" Height="50" FontFamily="Lucida Sans Unicode" FontSize="20"/>
+        <Label x:Name="lblOption" Content="Choose Food Group" HorizontalAlignment="Center" Margin="0,530,0,0" VerticalAlignment="Top" Width="205" Height="50" FontFamily="Lucida Sans Unicode" FontSize="20"/>
+        <CheckBox x:Name="checkBoxF_V" Content="Fruits&amp;Vegitables" Margin="46,591,529,168" Width="225" Height="25" FontFamily="Lucida Console" FontSize="20"/>
+        <CheckBox x:Name="checkBoxProtein" Content="Protein" Margin="46,634,529,125" Width="225" Height="25" FontFamily="Lucida Console" FontSize="20"/>
+        <CheckBox x:Name="checkBoxCarbohydrates" Content="Carbohydrates" Margin="298,591,278,168" Width="225" Height="25" FontFamily="Lucida Console" FontSize="20"/>
+        <CheckBox x:Name="checkBoxFats_Oil" Content="Fats and Oil" Margin="298,634,277,125" Width="225" Height="25" FontFamily="Lucida Console" FontSize="20"/>
+        <CheckBox x:Name="checkBoxDairy" Content="Dairy" Margin="502,591,73,168" Width="225" Height="25" FontFamily="Lucida Console" FontSize="20"/>
+        <Button x:Name="btnSteps" Content="ProceedToSteps" Margin="26,698,614,36" FontFamily="Lucida Console" FontSize="18" Click="btnSteps_Click"/>
+        <Button x:Name="btnSave" Content="Save" Margin="232,698,408,36" FontFamily="Lucida Console" FontSize="18" Click="btnSave_Click"/>
+        <Button x:Name="btnClose" Content="Close" Margin="414,698,226,36" FontFamily="Lucida Console" FontSize="18" Click="btnClose_Click"/>
+        <Button x:Name="btnBack" Content="Back" Margin="614,698,26,36" FontFamily="Lucida Console" FontSize="18" Click="btnBack_Click"/>
+
+    </Grid>
+</Window>
